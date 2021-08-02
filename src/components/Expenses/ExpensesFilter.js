@@ -1,5 +1,5 @@
 import React from 'react'
-import './ExpenseFilter.css'
+import './ExpensesFilter.css'
 
 const ExpenseFilter = (props) => {
   const dropDownHandler = (event) => {
