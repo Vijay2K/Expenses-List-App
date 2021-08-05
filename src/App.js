@@ -19,13 +19,13 @@ import NewExpense from './components/NewExpense/NewExpense'
 //     id: 'e3',
 //     title: 'shirt',
 //     price: 54,
-//     date: new Date(2020, 31, 7),
+//     date: new Date(2019, 31, 7),
 //   },
 //   {
 //     id: 'e4',
 //     title: 'Books',
 //     price: 25,
-//     date: new Date(2020, 12, 8),
+//     date: new Date(2021, 12, 8),
 //   },
 // ]
 

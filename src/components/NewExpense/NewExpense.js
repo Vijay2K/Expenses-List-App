@@ -20,6 +20,7 @@ const NewExpense = (props) => {
     }
 
     props.onAddExpenseData(expenseData)
+    setIsEditing(false)
   }
 
   return (
@@ -30,7 +31,7 @@ const NewExpense = (props) => {
       {isEditing && (
         <ExpenseForm
           onSaveExpenseData={saveExpenseDataHandler}
-          onEditing={stopEditingHandler}
+          onCancel={stopEditingHandler}
         />
       )}
     </div>
