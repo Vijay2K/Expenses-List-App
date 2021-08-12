@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import db from './components/Database/firebase'
 import Expenses from './components/Expenses/Expenses'
 import NewExpense from './components/NewExpense/NewExpense'
 
@@ -31,6 +32,18 @@ import NewExpense from './components/NewExpense/NewExpense'
 
 const App = () => {
   const [expenses, setExpenses] = useState([])
+
+  // useEffect(() => {
+  //   db.collection('expenses').onSnapshot((snapShot) => {
+  //     setExpenses(
+  //       snapShot.docs.map((doc) => ({
+  //         title: doc.title,
+  //         price: doc.price,
+  //         date: doc.date,
+  //       })),
+  //     )
+  //   })
+  // })
 
   const addExpenseDataHandler = (expense) => {
     setExpenses((prevExpenses) => {

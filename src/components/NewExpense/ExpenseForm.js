@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import db from '../Database/firebase'
+import firebase from 'firebase'
 import './ExpenseForm.css'
 
 const ExpenseForm = (props) => {
@@ -28,6 +30,11 @@ const ExpenseForm = (props) => {
     }
 
     props.onSaveExpenseData(expenseData)
+    // db.collection('expenses').add({
+    //   title: enteredTitle,
+    //   price: enteredAmount,
+    //   date: firebase.firestore.Timestamp(new Date(enteredDate)),
+    // })
     setEnteredTitle('')
     setEnteredAmount('')
     setEnteredDate('')
